@@ -7,12 +7,12 @@ class SearchForm extends React.Component {
     counter: null,
     notFound: false,
     data: data,
-    sortedData: null
+    sorteddata: null
   };
 
   componentDidMount() {
-    const sortedData = data.sort();
-    this.setState({ sortedData });
+    const sorteddata = data.sort();
+    this.setState({ sorteddata });
   }
 
   handleBinarySearch = (
@@ -79,7 +79,7 @@ class SearchForm extends React.Component {
           <button
             type="button"
             onClick={() =>
-              this.handleBinarySearch(this.state.sortedData, this.state.input)
+              this.handleBinarySearch(this.state.sorteddata, this.state.input)
             }
           >
             Binary Search
